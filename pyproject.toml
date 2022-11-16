@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PythonLogger_INAKI_PUJOL"
+version = "0.0.1"
+authors = [
+  { name="Iñaki Pujol", email="ipujol10@gmail.com" },
+]
+description = "A logger for python"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ipujol10/PythonLogger"
+"Bug Tracker" = "https://github.com/ipujol10/PythonLogger/issues"
