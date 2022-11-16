@@ -1,4 +1,5 @@
-from .CustomLogger import CustomLogging, logging
+from .CustomLogger import CustomLogging
+from .CustomLogger import logging
 
 
 def set_logger(
@@ -7,6 +8,7 @@ def set_logger(
     format: str = "[%(levelname)s] %(asctime)s - %(message)s (%(filename)s:%(lineno)d)"
 ) -> None:
     logging.basicConfig(level=level, format=format)
+
 
 def get_logger(
     name: str = "",
