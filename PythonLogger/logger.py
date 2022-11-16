@@ -1,16 +1,9 @@
 import logging
-from enum import Enum
-
-
-class Levels(Enum):
-    Debug = logging.DEBUG
-    Info = logging.INFO
-    Error = logging.ERROR
 
 
 def set_logger(
     *,
-    level: Levels = Levels.Info.value,
-    format: str = "[%(levelname)s] %(asctime)s - %(message)s"
+    level: int = logging.INFO,
+    format: str = "[%(levelname)s] %(asctime)s - %(message)s (%(filename)s:%(lineno)d)"
 ) -> None:
     logging.basicConfig(level=level, format=format)
